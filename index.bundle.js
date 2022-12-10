@@ -11774,7 +11774,7 @@ function start() {
     $table.append(jquery__WEBPACK_IMPORTED_MODULE_0__('<tr>').append(jquery__WEBPACK_IMPORTED_MODULE_0__('<th>').text('Item'), jquery__WEBPACK_IMPORTED_MODULE_0__('<th>').text('Cost'), jquery__WEBPACK_IMPORTED_MODULE_0__('<th>').text('Quantity'), jquery__WEBPACK_IMPORTED_MODULE_0__('<th>').text('Use')));
     $table_minimal.append(jquery__WEBPACK_IMPORTED_MODULE_0__('<tr>').append(jquery__WEBPACK_IMPORTED_MODULE_0__('<th colspan="4">').text('Item')));
     jquery__WEBPACK_IMPORTED_MODULE_0__.each(currentItems, function (index, value) {
-        var _a, _b;
+        var _a;
         var notisClass = "";
         switch (index) {
             case 0:
@@ -11791,8 +11791,8 @@ function start() {
                 break;
             default: break;
         }
-        $table.append(jquery__WEBPACK_IMPORTED_MODULE_0__('<tr id="row">').append(jquery__WEBPACK_IMPORTED_MODULE_0__('<td class="imgcell ' + notisClass + '">').append(jquery__WEBPACK_IMPORTED_MODULE_0__('<img>').attr('src', (_a = src_imgs[value.name]) === null || _a === void 0 ? void 0 : _a.default)), jquery__WEBPACK_IMPORTED_MODULE_0__('<td class="qtycell ' + notisClass + '">').append(jquery__WEBPACK_IMPORTED_MODULE_0__('<img>').attr('src', src_imgs["coins"].default)).append(" " + value.cost.toString()), jquery__WEBPACK_IMPORTED_MODULE_0__('<td class="qtycell ' + notisClass + '">').text(value.quantity), jquery__WEBPACK_IMPORTED_MODULE_0__('<td class="qtycell ' + notisClass + '">').text(value.use)));
-        $table_minimal.append(jquery__WEBPACK_IMPORTED_MODULE_0__('<td class="imgcell ' + notisClass + '">').append(jquery__WEBPACK_IMPORTED_MODULE_0__('<img>').attr('src', (_b = src_imgs[value.name]) === null || _b === void 0 ? void 0 : _b.default)));
+        $table.append(jquery__WEBPACK_IMPORTED_MODULE_0__('<tr id="row">').append(jquery__WEBPACK_IMPORTED_MODULE_0__('<td class="imgcell ' + notisClass + '">').append(jquery__WEBPACK_IMPORTED_MODULE_0__('<img>').attr('src', src_imgs[value.name])), jquery__WEBPACK_IMPORTED_MODULE_0__('<td class="qtycell ' + notisClass + '">').append(jquery__WEBPACK_IMPORTED_MODULE_0__('<img>').attr('src', src_imgs["coins"])).append(" " + value.cost.toString()), jquery__WEBPACK_IMPORTED_MODULE_0__('<td class="qtycell ' + notisClass + '">').text(value.quantity), jquery__WEBPACK_IMPORTED_MODULE_0__('<td class="qtycell ' + notisClass + '">').text(value.use)));
+        $table_minimal.append(jquery__WEBPACK_IMPORTED_MODULE_0__('<td class="imgcell ' + notisClass + '">').append(jquery__WEBPACK_IMPORTED_MODULE_0__('<img>').attr('src', (_a = src_imgs[value.name]) === null || _a === void 0 ? void 0 : _a.default)));
     });
     $output.empty().append($table);
     $output_minimal.empty().append($table_minimal);
